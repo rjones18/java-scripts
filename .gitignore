@@ -1,0 +1,11 @@
+# Ignore all compiled class files
+*.class
+
+# Ignore the JDK folder you have locally
+oracleJdk-25.jdk/
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore JAR files
+*.jar

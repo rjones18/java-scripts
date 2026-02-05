@@ -1,0 +1,4 @@
+.git
+*.jdk
+*.jar
+.DS_Store
