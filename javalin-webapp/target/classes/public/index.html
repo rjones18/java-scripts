@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Javalin Web App</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>Hello from Javalin 👋</h1>
+  <p>Backend route: <code>/api/hello</code></p>
+
+  <button id="btn">Call API</button>
+  <pre id="out"></pre>
+
+  <script>
+    document.getElementById("btn").addEventListener("click", async () => {
+      const res = await fetch("/api/hello");
+      const data = await res.json();
+      document.getElementById("out").textContent = JSON.stringify(data, null, 2);
+    });
+  </script>
+</body>
+</html>
+EOF
+
